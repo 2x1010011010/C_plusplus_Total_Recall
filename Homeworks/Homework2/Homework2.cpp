@@ -16,11 +16,11 @@ void OutputString(string output){
     cout << output << endl;
 }
 
-void SwapStrings(string firstName, string secondName){
+void SwapStrings(){
     string temp_var;
-    temp_var = firstName;
-    first_name = secondName;
-    second_name = firstName;
+    temp_var = first_name;
+    first_name = second_name;
+    second_name = temp_var;
 }
 
 int main(){
@@ -30,7 +30,7 @@ int main(){
     OutputString("Enter name: ");
     second_name = InputString();
     
-    SwapStrings(first_name, second_name);
+    SwapStrings();
     
     OutputString("Your name is " + first_name);
     OutputString("Your second name is " + second_name);
